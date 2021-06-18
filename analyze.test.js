@@ -7,8 +7,8 @@ test('can detect length', ()=>{
     expect(analyze([1,2,3,4,5,6,7,8,9,10]).length).toBe(10)
 })
 test('can detect max', ()=>{
-    expect(analyze([1,2,3,4,5,6,7,8,9,10]).max).toBe(10)
+    expect(analyze([1,2,3,4,5,6,7,8,9,50,40,90,1]).max).toBe(90)
 })
-test('can detect max', ()=>{
-    expect(analyze([1,2,3,4,5,6,7,8,9,10]).min).toBe(1)
+test('can detect min', ()=>{
+    expect(analyze([12,4,1,2,3,4,5,6,7,8,9,10]).min).toBe(1)
 })
